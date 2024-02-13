@@ -1,0 +1,64 @@
+<!DOCTYPE hmtl>
+<html>
+	<head len="en">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather app</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="currentTemp">
+				<h1 class="trenutnaTemp"></h1>
+				<h3 id="grad"></h3>
+				<i id="uslovi"></i>
+			</div>
+			<div id="cityTemp">
+				<a id="arrow" href="index2.html"><img src="iconArrowR.svg"  alt="Arrow icon"/></a>
+			</div>
+
+			<div id="hourlyContainer">
+				<div id="hourly">
+					<div id="item1">
+						<h1 id="yestedayTemp"></h1>
+						<img id="icon1" alt="icon , weather app icon" />
+						<h5 id="rain1"></h5>
+						<h4>Yesterday</h4>
+					</div>
+					<div id="item2">
+						<h1 class="trenutnaTemp" alt="icon , weather app icon"></h1>
+						<img id="icon2" />
+						<h5 id="rain2"></h5>
+						<h4>Now</h4>
+					</div>
+					<div id="item3">
+						<h1 id="tomorrowTemp"></h1>
+						<img id="icon3" alt="icon , weather app icon"/>
+						<h5 id="rain3"></h5>
+						<h4>Tomorrow</h4>
+					</div>
+					<div id="item4">
+						<h1 id="dayAtferTemp"></h1>
+						<img id="icon4"  alt="icon , weather app icon"/>
+						<h5 id="rain4"></h5>
+						<h4>Day after</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

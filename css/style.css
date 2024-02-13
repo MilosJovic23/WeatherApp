@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+#container {
+	background-image: url("../images/slika1.svg");
+
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+#hourlyContainer {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+#currentTemp {
+	display: flex;
+	flex-direction: column;
+	height: 30%;
+	width: 100%;
+	color: white;
+	justify-content: center;
+	align-items: center;
+}
+#currentTemp h1 {
+	font-size: 6rem;
+	font-weight: lighter;
+	letter-spacing: -5px;
+}
+#currentTemp i {
+	font-size: 1.3rem;
+	font-weight: lighter;
+}
+#currentTemp h3 {
+	font-size: 2.1rem;
+	font-weight: normal;
+	letter-spacing: 0.1px;
+}
+
+#cityTemp {
+	height: 20%;
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+}
+
+#arrow {
+	height: 6vh;
+	width: 6vh;
+	border: 0.5px solid #ffffff;
+	border-radius: 10vh;
+	background-color: rgba(255, 255, 255, 0.403);
+	backdrop-filter: blur(8px);
+	margin-right: 10px;
+}
+#arrow:hover {
+	height: 6vh;
+	width: 6vh;
+	border: 0.5px solid #ffffff;
+	border-radius: 10vh;
+	background-color: rgba(255, 255, 255, 0.325);
+	backdrop-filter: blur(2px);
+	margin-right: 10px;
+}
+
+#hourly {
+	background-color: rgba(255, 255, 255, 0.403);
+	backdrop-filter: blur(8px);
+	width: 90%;
+	height: 40%;
+	margin-bottom: 3vh;
+	border-radius: 20px;
+	/* border: 0.5px solid #ececec; */
+	display: flex;
+	gap: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #1b006b;
+}
+#item1 {
+	width: 20%;
+	height: 15vh;
+	border: 1px solid #e7e7e7;
+	border-radius: 11px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.8s ease;
+}
+#item1:hover {
+	width: 20%;
+	height: 15vh;
+	border: 1px solid #e7e7e7;
+	background-image: linear-gradient(#a6c7ff, #1b006b);
+	border-radius: 11px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#hourly h1 {
+	font-size: 2rem;
+	font-weight: 400;
+	letter-spacing: -2px;
+}
+#hourly img {
+	width: 5vh;
+	margin-bottom: 3px;
+}
+#item2 {
+	width: 20%;
+	height: 15vh;
+	border: 0.5px solid #e7e7e7;
+	border-radius: 10px;
+}
+
+#hourly h5 {
+	margin-bottom: 5px;
+}
+#hourly h4 {
+	font-size: 0.8rem;
+	font-weight: 400;
+}
+#item2 {
+	width: 20%;
+	height: 15vh;
+	border: 1px solid #e7e7e7;
+	border-radius: 11px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.8s ease;
+}
+#item2:hover {
+	width: 20%;
+	height: 15vh;
+	border: 1px solid #e7e7e7;
+	background-image: linear-gradient(#a6c7ff, #1b006b);
+	border-radius: 11px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#item3 {
+	width: 20%;
+	height: 15vh;
+	border: 1px solid #e7e7e7;
+	border-radius: 11px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.8s ease;
+}
+#item3:hover {
+	width: 20%;
+	height: 15vh;
+	border: 1px solid #e7e7e7;
+	background-image: linear-gradient(#a6c7ff, #1b006b);
+	border-radius: 11px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#item4 {
+	width: 20%;
+	height: 15vh;
+	border: 1px solid #e7e7e7;
+	border-radius: 11px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.8s ease;
+}
+#item4:hover {
+	width: 20%;
+	height: 15vh;
+	border: 1px solid #e7e7e7;
+	background-image: linear-gradient(#a6c7ff, #1b006b);
+	border-radius: 11px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/*   */
+
+@media only screen and (min-width: 750px) {
+	#container {
+		background-image: url("../images/slika3.svg");
+		background-size: cover;
+	}
+
+	#hourly {
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#container {
+		background-image: url("../images/slika2.svg");
+		background-size: cover;
+	}
+	#arrow {
+		margin-right: 15vh;
+	}
+	#arrow:hover {
+		margin-right: 15vh;
+	}
+	#hourly {
+		width: 30%;
+	}
+}
