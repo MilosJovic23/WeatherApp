@@ -12,8 +12,6 @@ $(document).ready(function () {
 			alerts: "no",
 		},
 		success: function (response) {
-			console.log(response.current.temp_c);
-			console.log(response);
 			$(".trenutnaTemp").text(response.current.temp_c + "˚");
 			$("#uslovi").text(response.current.condition.text);
 			$("#condition1").text(response.current.condition.text);
@@ -84,7 +82,7 @@ $(document).ready(function () {
 			alerts: "no",
 		},
 		success: function (response) {
-			console.log(response)
+
 			$("#condition2").text(response.current.condition.text);
 			$("#cityTemp2").text(response.current.temp_c + "˚");
 			$("#hiLow2").text("H:"+
@@ -93,7 +91,6 @@ $(document).ready(function () {
 					response.forecast.forecastday[0].day.mintemp_c + "˚"
 			);
 			$("#city2").text(
-				
 				response.location.name + "," + response.location.country
 			);
 		},
@@ -111,7 +108,6 @@ $(document).ready(function () {
 			alerts: "no",
 		},
 		success: function (response) {
-			console.log(response)
 			$("#condition3").text(response.current.condition.text);
 			$("#cityTemp3").text(response.current.temp_c + "˚");
 			$("#hiLow3").text("H:"+
